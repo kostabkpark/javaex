@@ -12,7 +12,7 @@ public class Person {
 
   public void setNat(String nat) {
     if(nat == null || nat.equals("") || nat.equals(" ")) {
-      nat = "대한민국";
+      this.nat = "대한민국";
     } else {
       this.nat = nat;
     }
@@ -24,7 +24,7 @@ public class Person {
 
   public void setAddress(String address) {
     if(address == null || address.equals("") || address.equals(" ")) {
-      address = "서울";
+      this.address = "서울";
     } else {
       this.address = address;
     }
