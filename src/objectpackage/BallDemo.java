@@ -25,8 +25,8 @@ class Ball{
     }
   }
   public double getVolume(){
-    final double PI = 3.14;
-    double volume = (4/(double)3) * PI * radius * radius * radius;
+    //final double PI = 3.14;
+    double volume = (4/(double)3) * Math.PI * radius * radius * radius;
     return volume;
   }
 

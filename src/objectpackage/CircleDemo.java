@@ -11,5 +11,6 @@ public class CircleDemo {
     c1.printRadius();
     area = c1.getArea();
     System.out.println("원의 넓이 : " + area);
+    System.out.println("반올림한 원의 넓이 : " + Math.round(area));
   }
 }

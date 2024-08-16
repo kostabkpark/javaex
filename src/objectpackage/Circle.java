@@ -2,6 +2,7 @@ package objectpackage;
 
 class Circle {
   // 필드 - 캡슐화 전
+  static final double PI = Math.PI;
   private int radius = 1;
   // 생성자 (기본생성자,~~~)
 //  public Circle(){
@@ -21,7 +22,6 @@ class Circle {
    * 매개변수 X 리턴값 O (double)
    */
   public double getArea() {
-    final double PI = 3.14;
     double area = PI * radius * radius;
     return area;
   }
