@@ -22,7 +22,9 @@ class ColoredCircle {
     this(1,"white");
   }
   public ColoredCircle(String color) {
-    this(1,color);
+    //this(1,color);
+    this();
+    this.color = color;
   }
   public ColoredCircle(int r) {
     this(r, "white");
