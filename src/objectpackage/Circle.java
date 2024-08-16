@@ -4,10 +4,14 @@ class Circle {
   // 필드 - 캡슐화 전
   static final double PI = Math.PI;
   private int radius = 1;
-  // 생성자 (기본생성자,~~~)
-//  public Circle(){
-//
-//  }
+  // 생성자 (기본생성자~~~)
+  public Circle(int radius) {
+    if(radius <= 0){
+      System.out.println("원의 반지름은 0보다 커야 합니다.");
+    } else {
+      this.radius = radius;
+    }
+  }
   // 메서드
   /**
    * 원의 반지름을 출력하는 메서드
