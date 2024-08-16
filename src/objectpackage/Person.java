@@ -10,25 +10,11 @@ public class Person {
     return nat;
   }
 
-  public void setNat(String nat) {
-    if(nat == null || nat.equals("") || nat.equals(" ")) {
-      this.nat = "대한민국";
-    } else {
-      this.nat = nat;
-    }
-  }
 
   public String getAddress() {
     return address;
   }
 
-  public void setAddress(String address) {
-    if(address == null || address.equals("") || address.equals(" ")) {
-      this.address = "서울";
-    } else {
-      this.address = address;
-    }
-  }
 
   public int getAge() {
     return age;
@@ -36,19 +22,39 @@ public class Person {
   public String getName(){
     return name;
   }
-  public void setAge(int age){
+  public Person setAge(int age){
     if(age < 0 || age > 130) { // 129살이 가장 많은 나이라고 가정
       System.out.println("나이는 0에서 129 살까지만 입력가능합니다.");
     } else {
       this.age = age;
     }
+    return this;
   }
-  public void setName(String name){
+  public Person setName(String name){
     if(name == null || name.equals("") || name.equals(" ")) {
       name = "홍길동";
     } else {
       this.name = name;
     }
+    return this;
+  }
+
+  public Person setNat(String nat) {
+    if(nat == null || nat.equals("") || nat.equals(" ")) {
+      this.nat = "대한민국";
+    } else {
+      this.nat = nat;
+    }
+    return this;
+  }
+
+  public Person setAddress(String address) {
+    if(address == null || address.equals("") || address.equals(" ")) {
+      this.address = "서울";
+    } else {
+      this.address = address;
+    }
+    return this;
   }
 
   public void sayHello() {
