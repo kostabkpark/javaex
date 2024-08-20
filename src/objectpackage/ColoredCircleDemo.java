@@ -3,7 +3,6 @@ package objectpackage;
 public class ColoredCircleDemo {
   public static void main(String[] args) {
     ColoredCircle cc1 = new ColoredCircle();
-    cc1.
     System.out.printf("1번 원의 반지름과 색은 %d , %s 입니다. \n" , cc1.r, cc1.color);
     System.out.println(ColoredCircle.numOfCircles);
     ColoredCircle.showStatus();
@@ -18,7 +17,6 @@ public class ColoredCircleDemo {
     ColoredCircle cc4 = new ColoredCircle(10, "red");
     System.out.printf("4번 원의 반지름과 색은 %d , %s 이고, %d 번째로 생성된 원입니다. \n" ,
         cc4.r, cc4.color, ColoredCircle.numOfCircles);
-
     ColoredCircle.showStatus();
   }
 }
