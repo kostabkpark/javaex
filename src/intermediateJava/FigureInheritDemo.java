@@ -24,21 +24,8 @@ class Triangle extends Figure {
   private int height;
   private int width;
 
-  public Triangle(int poly, int height, int width) {
-    this.height = height;
-    this.width = width;
-  }
 
-//  @Override
-//  public double getArea() {
-//    return super.getArea();
-//  }
-
-  @Override
-  public double getArea() {
-    return (width * height) / (double) 2;
-  }
-}
+  
 
 class RectAngle extends Figure {
   private int height ;
