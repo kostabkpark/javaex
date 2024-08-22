@@ -10,23 +10,28 @@ public class Ex1 {
 }
 
 class Circle {
+  // 필드
   int radius;
-  public Circle(int radius){
+  // 생성자
+  public Circle(int radius) {
     this.radius = radius;
   }
-  void show(){
+  // 메서드
+  void show() {
     System.out.println("반지름이 " + radius + " 인 원이다.");
   }
 }
 
 class ColoredCircle extends Circle{
+  // 필드
   String color;
+  // 생성자
   public ColoredCircle(int radius, String color){
     super(radius);
     this.color = color;
   }
-  @Override
+  // 메서드
   void show(){
-    System.out.println("반지름이 "+ radius + " 인 " + color + " 원이다.");
+    System.out.println("반지름이 " + radius + " 인 " + color +  " 원이다.");
   }
 }
