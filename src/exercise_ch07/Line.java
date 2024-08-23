@@ -18,5 +18,12 @@ public class Line implements Comparable{
     }
     return -999;
   }
+
+  @Override
+  public String toString() {
+    return "Line[" +
+        "length=" + length +
+        ']';
+  }
 }
 
