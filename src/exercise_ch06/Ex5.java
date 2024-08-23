@@ -53,7 +53,7 @@ class Smartphone extends Telephone {
   private String game;
   // 생성자
   public Smartphone(String owner, String game) {
-    super(owner, "내일");
+    super(owner, "");
     this.game = game;
   }
   // 메서드
