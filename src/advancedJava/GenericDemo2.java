@@ -8,18 +8,21 @@ public class GenericDemo2 {
     Beer beer = c1.getBeverage();
     System.out.println(beer.name);
 
+    Cup<Boricha> c2;
+    //Cup<String>
+
     //c1.setBeverage(new Boricha());
   }
 }
 
-class Cup<A> {
-  private A beverage;
+class Cup<T extends Beverage> {
+  private T beverage;
 
-  public A getBeverage() {
+  public T getBeverage() {
     return beverage;
   }
 
-  public void setBeverage(A beverage) {
+  public void setBeverage(T beverage) {
     this.beverage = beverage;
   }
 }
