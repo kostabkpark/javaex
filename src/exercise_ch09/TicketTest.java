@@ -11,7 +11,6 @@ public class TicketTest {
         new Ticket(3000),
     };
     System.out.println(countGT(a, a[0]));
-
   }
 
   public static <T extends Comparable> int countGT(T[] t, T e) {
