@@ -18,9 +18,9 @@ public class SLinkedListDemo {
     sll.addFirst(10);
     sll.addFirst(20);
     sll.addFirst(30);
-    //sll.addLast(40);
+    sll.addLast(40);
     System.out.println(sll.size());
-    //System.out.println(sll.getValue(3));
+    System.out.println(sll.getValue(3));
     System.out.println(sll.getNode(3));
 
     System.out.println(sll.removeFirst() + "이 삭제되었습니다.");

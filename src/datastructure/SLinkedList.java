@@ -20,10 +20,10 @@ public class SLinkedList<E> {
     newNode.next = tail;
     if(size == 0) { // head == tail && head == null
       head = newNode;
+    } else {
+      getNode(size - 1).next = newNode;
     }
     tail = newNode;
-    System.out.println(tail.e);
-    System.out.println(tail.next);
     size++;
   }
 
